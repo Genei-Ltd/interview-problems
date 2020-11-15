@@ -1,0 +1,169 @@
+<div>
+  <article>
+    <section class="dn do dp dq s dr bj u"></section>
+    <div>
+      <section class="dy dz ea cy eb">
+        <div class="n p">
+          <div class="ae af ag ah ai ec ak s">
+            <figure class="gx gy dp dq paragraph-image"><img alt="Image for post" class="ds he dt hf s"
+                src="https://miro.medium.com/max/1920/0*NTggrYC-wayWv6-f.jpg" width="960"
+                srcset="https://miro.medium.com/max/552/0*NTggrYC-wayWv6-f.jpg 276w, https://miro.medium.com/max/1104/0*NTggrYC-wayWv6-f.jpg 552w, https://miro.medium.com/max/1280/0*NTggrYC-wayWv6-f.jpg 640w, https://miro.medium.com/max/1400/0*NTggrYC-wayWv6-f.jpg 700w"
+                sizes="700px">
+              <figcaption class="hq hr dr dp dq hs ht ap b aq ar fu">Source: <a
+                  href="https://pixabay.com/photos/purple-sky-dusk-shooting-star-690724/" class="de hu">Pixabay</a>
+              </figcaption>
+            </figure>
+            <p id="da60" class="hv hw ef hx b fe hy hz ia fh ib ic id ie if ig ih ii ij ik il im in io ip iq dy fc">Over
+              the last few years, the size of deep learning models has increased at an exponential pace (famously among
+              language models):</p>
+            <figure class="is it iu iv iw gy dp dq paragraph-image"><img alt="Image for post" class="ds he dt hf s"
+                src="https://miro.medium.com/max/2800/0*5qxZ-ksmewafb5zb.png" width="1400"
+                srcset="https://miro.medium.com/max/552/0*5qxZ-ksmewafb5zb.png 276w, https://miro.medium.com/max/1104/0*5qxZ-ksmewafb5zb.png 552w, https://miro.medium.com/max/1280/0*5qxZ-ksmewafb5zb.png 640w, https://miro.medium.com/max/1400/0*5qxZ-ksmewafb5zb.png 700w"
+                sizes="700px">
+              <figcaption class="hq hr dr dp dq hs ht ap b aq ar fu">Source: <a
+                  href="https://www.microsoft.com/en-us/research/blog/turing-nlg-a-17-billion-parameter-language-model-by-microsoft/"
+                  class="de hu">Microsoft</a></figcaption>
+            </figure>
+            <p id="39ad" class="hv hw ef hx b fe hy hz ia fh ib ic id ie if ig ih ii ij ik il im in io ip iq dy fc">And
+              in fact, this chart is out of date. As of this month, OpenAI has announced GPT-3, which is a 175 billion
+              parameter model&#x2014;or roughly ten times the height of this chart.</p>
+            <p id="ccee" class="hv hw ef hx b fe hy hz ia fh ib ic id ie if ig ih ii ij ik il im in io ip iq dy fc">As
+              models grow larger, they introduce new infrastructure challenges. For my colleagues and I building <a
+                href="https://github.com/cortexlabs/cortex" class="de hu">Cortex</a> (open source model serving
+              infrastructure), these challenges are front and center, especially as the number of users deploying large
+              models to production increases.</p>
+            <p id="f194" class="hv hw ef hx b fe hy hz ia fh ib ic id ie if ig ih ii ij ik il im in io ip iq dy fc">
+              Below, Ive outline some of the design decisions we made to support serving models like GPT-2 at scale.</p>
+            <h2 id="b109" class="iy">1. GPUs for inference</h2>
+            <p id="0e39" class="hv hw ef hx b fe ju hz ia fh jv ic id ie jw ig ih ii jx ik il im jy io ip iq dy fc">
+              Running large deep learning inference on CPUs can be prohibitively slow. GPUs, on the other hand, have
+              significantly more bandwidth (useful for the large computations involved in inference). This makes a large
+              difference in inference latency.</p>
+            <p id="4caf" class="hv hw ef hx b fe hy hz ia fh ib ic id ie if ig ih ii ij ik il im in io ip iq dy fc">For
+              example, below I&#x2019;ve deployed GPT-2 as an API on CPUs. Using the Cortex CLI, I&#x2019;m monitoring
+              the performance of the API, which I&#x2019;ve named <code class="hk jz ka kb kc b">generator</code>:</p>
+            <pre class="is it iu iv iw kd ke kf"></pre>
+            <p id="7d47" class="hv hw ef hx b fe hy hz ia fh ib ic id ie if ig ih ii ij ik il im in io ip iq dy fc">The
+              average inference takes nearly a full second to serve, which has serious implications at scale. For
+              applications that have thousands of concurrent users, it will take a large number of replicas to keep the
+              request queue under control.</p>
+            <p id="2497" class="hv hw ef hx b fe hy hz ia fh ib ic id ie if ig ih ii ij ik il im in io ip iq dy fc">
+              Deploying on a GPU, as shown below, improves latency quite a bit:</p>
+            <pre class="is it iu iv iw kd ke kf"></pre>
+            <p id="e2d6" class="hv hw ef hx b fe hy hz ia fh ib ic id ie if ig ih ii ij ik il im in io ip iq dy fc">
+              That&#x2019;s roughly a 80% decrease from CPUs. For any application running at production scale, this is a
+              meaningful improvement&#x2014;but even at small scale, it can be crucial for latency-sensitive
+              applications.</p>
+            <p id="efc8" class="hv hw ef hx b fe hy hz ia fh ib ic id ie if ig ih ii ij ik il im in io ip iq dy fc">For
+              example, features like Gmail&#x2019;s Smart Compose require latency as close to realtime as possible. If
+              Smart Compose generates text predictions more slowly than an average person types, recommendations are
+              useless.</p>
+            <p id="8f67" class="hv hw ef hx b fe hy hz ia fh ib ic id ie if ig ih ii ij ik il im in io ip iq dy fc">
+              Implementing GPU support required a little refactoring. Cortex uses Kubernetes to manage model serving
+              containers, but Kubernetes does not have out of the box support for managing GPUs across nodes. In order
+              to manage GPUs through Kubernetes, we integrated <a href="https://github.com/NVIDIA/k8s-device-plugin"
+                class="de hu">NVIDIA&#x2019;s device plugin for Kubernetes</a>. Despite being in beta, we&#x2019;ve
+              found it to be very stable.</p>
+            <h2 id="baab" class="iy">2. Autoscaling based on concurrency</h2>
+            <p id="1c28" class="hv hw ef hx b fe ju hz ia fh jv ic id ie jw ig ih ii jx ik il im jy io ip iq dy fc">GPU
+              inference solved most of our latency and performance issues, but it introduced new challenges,
+              particularly around autoscaling.</p>
+            <p id="0d57" class="hv hw ef hx b fe hy hz ia fh ib ic id ie if ig ih ii ij ik il im in io ip iq dy fc">The
+              <a href="https://kubernetes.io/docs/tasks/run-application/horizontal-pod-autoscale/"
+                class="de hu">Kubernetes pod autoscaler</a> works by measuring CPU, not GPU, utilization. Obviously,
+              this is useless for GPU inference.</p>
+            <p id="8afe" class="hv hw ef hx b fe hy hz ia fh ib ic id ie if ig ih ii ij ik il im in io ip iq dy fc">We
+              brainstormed a number of other approaches to autoscaling GPU instances. First, we tried autoscaling based
+              on target latency. In this approach, users set an ideal latency for their API, and Cortex spun up
+              additional instances until that latency was achieved. There were two key issues here:</p>
+            <ul class>
+              <li id="5841"
+                class="hv hw ef hx b fe hy hz ia fh ib ic id ie if ig ih ii ij ik il im in io ip iq kp kq kr fc">If a
+                user set their target latency unrealistically low&#x2014;as in their model couldn&#x2019;t possibly hit
+                it with the provisioned resources&#x2014;the cluster would autoscale infinitely.</li>
+              <li id="293e"
+                class="hv hw ef hx b fe ks hz ia fh kt ic id ie ku ig ih ii kv ik il im kw io ip iq kp kq kr fc">Latency
+                is a poor signal for scaling <em class="kx">down</em> instances. The latency of a request only changes
+                when a replica is oversubscribed. Whether a replica is barely being used, or is at 90% utilization,
+                latency will be the same so long as there are no queued requests</li>
+            </ul>
+            <p id="7640" class="hv hw ef hx b fe hy hz ia fh ib ic id ie if ig ih ii ij ik il im in io ip iq dy fc">
+              Additionally, maintaining and debugging this signal would be difficult for users. Any update to the model
+              that affected latency, or any changes to the prediction API that changed latency (calls to another API,
+              file operations, etc.) would require them to tweak their target latency. This was suboptimal.</p>
+            <p id="599f" class="hv hw ef hx b fe hy hz ia fh ib ic id ie if ig ih ii ij ik il im in io ip iq dy fc">The
+              second idea we had was to monitor GPU utilization, but currently, <a
+                href="https://github.com/kubernetes-sigs/metrics-server" class="de hu">Kubernetes metrics server</a>
+              does not offer GPU monitoring. We considered building this ourselves, but ultimately passed for a third
+              option.</p>
+            <p id="10c2" class="hv hw ef hx b fe hy hz ia fh ib ic id ie if ig ih ii ij ik il im in io ip iq dy fc">Our
+              third option, and the one which turned out to be the best, was to implement <strong
+                class="hx eg">request-based autoscaling</strong>, in which the number of enqueued requests and the
+              concurrency capacity of a replica are used to calculate the number of needed replicas.</p>
+            <p id="df8c" class="hv hw ef hx b fe hy hz ia fh ib ic id ie if ig ih ii ij ik il im in io ip iq dy fc">This
+              approach worked, but required some refactoring:</p>
+            <ul class>
+              <li id="4d52"
+                class="hv hw ef hx b fe hy hz ia fh ib ic id ie if ig ih ii ij ik il im in io ip iq kp kq kr fc">We
+                needed to redesign Cortex to use FastAPI and Uvicorn, as they allow us to run an asynchronous event loop
+                that tracks requests as they&#x2019;re added to the queue.</li>
+              <li id="8afb"
+                class="hv hw ef hx b fe ks hz ia fh kt ic id ie ku ig ih ii kv ik il im kw io ip iq kp kq kr fc">We
+                added a <code class="hk jz ka kb kc b">target_replica_concurrency</code> field to Cortex&#x2019;s
+                configuration files, so that users can specify how many requests a replica should handle concurrently at
+                a steady rate.</li>
+            </ul>
+            <p id="ede6" class="hv hw ef hx b fe hy hz ia fh ib ic id ie if ig ih ii ij ik il im in io ip iq dy fc">
+              There&#x2019;s a <a class="de hu"
+                href="https://towardsdatascience.com/implementing-request-based-autoscaling-for-machine-learning-workloads-feb41572956">full
+                write up of the project here</a>, but the end result is that now, Cortex can quickly autoscale to the
+              optimal number of replicas (i.e. the minimum required without affecting performance).</p>
+            <h2 id="2420" class="iy">3. Managing costs with spot instances</h2>
+            <p id="e580" class="hv hw ef hx b fe ju hz ia fh jv ic id ie jw ig ih ii jx ik il im jy io ip iq dy fc">One
+              of our ongoing focuses is lowering the cost of inference at scale. AWS&#x2019;s cheapest GPU instance is
+              the <code class="hk jz ka kb kc b">g4dn.xlarge</code>, which costs $0.526 per hour and has a single GPU.
+              Running a 500 GPU cluster, which some users do, for a month costs about $190,000.</p>
+            <p id="8daa" class="hv hw ef hx b fe hy hz ia fh ib ic id ie if ig ih ii ij ik il im in io ip iq dy fc">Our
+              initial instinct here was to support spot instances for inference. If you&#x2019;re unfamiliar, spot
+              instances are unused instances that AWS sells at a steep&#x2014;sometimes as much as 70%&#x2014;discount.
+            </p>
+            <p id="5336" class="hv hw ef hx b fe hy hz ia fh ib ic id ie if ig ih ii ij ik il im in io ip iq dy fc">The
+              challenge in implementation, however, was around how spot instances are allocated within AWS autoscaling
+              groups.</p>
+            <p id="303f" class="hv hw ef hx b fe hy hz ia fh ib ic id ie if ig ih ii ij ik il im in io ip iq dy fc">Our
+              goal was to allow users to opt to receive spot instances by default if available, and otherwise receive on
+              demand instances. But autoscaling groups don&#x2019;t work that way. Instead, users specify what
+              percentage of nodes in an autoscaling group they want to be spot, and EKS tries to accommodate. There is
+              no way to configure the autoscaling group to fall back to on demand instances when spot instances are not
+              available.</p>
+            <p id="e100" class="hv hw ef hx b fe hy hz ia fh ib ic id ie if ig ih ii ij ik il im in io ip iq dy fc">To
+              work around this, Cortex actually defines two separate autoscaling groups: one for spot instances, and
+              another which is 100% on demand (and is only used as a backup for the primary autoscaling group). If a
+              user requests spot instances, Cortex will first request nodes from the spot instance group. If an instance
+              cannot be allocated (the scale-up request times out after five minutes), Cortex will request an instance
+              from the on-demand instance group, and will temporarily blacklist the spot instance group so that future
+              requests avoid the timeout.</p>
+            <h2 id="2ca1" class="iy">Adapting to changes in model development</h2>
+            <p id="738a" class="hv hw ef hx b fe ju hz ia fh jv ic id ie jw ig ih ii jx ik il im jy io ip iq dy fc">As
+              model sizes continue to increase exponentially, there are other related changes within machine learning
+              that affect how we design infrastructure.</p>
+            <p id="b1d6" class="hv hw ef hx b fe hy hz ia fh ib ic id ie if ig ih ii ij ik il im in io ip iq dy fc">
+              First, pretrained models are becoming more prevalent in production. There are many teams doing no model
+              training at all, and simply deploying pretrained models. Having a serving platform that can stand on its
+              own, as opposed to only integrating with their training pipeline, is important for them&#x2014;as they
+              don&#x2019;t have a pipeline.</p>
+            <p id="9fd2" class="hv hw ef hx b fe hy hz ia fh ib ic id ie if ig ih ii ij ik il im in io ip iq dy fc">
+              Secondly, ASICs are becoming more important, as they present a good option for handling the resource needs
+              of large models. Google has rolled out cloud TPUs, which allow for faster training and inference, while
+              Amazon recently released Inferentia, a chip built specifically for inference.</p>
+            <p id="af8d" class="hv hw ef hx b fe hy hz ia fh ib ic id ie if ig ih ii ij ik il im in io ip iq dy fc">All
+              of these changes are good things&#x2014;state-of-the-art models are being released pretrained, more teams
+              are putting models into production, and the hardware for running inference is improving&#x2014;but in
+              order to take advantage of them, our model serving infrastructure needs to be constantly improved and
+              rearchitected.</p>
+          </div>
+        </div>
+      </section>
+    </div>
+  </article>
+</div>

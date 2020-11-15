@@ -1,25 +1,14 @@
-import logo from './logo.svg';
-import './App.css';
+import recon from './assets/recon.json'
+import nlp from './assets/nlp.json'
+import JsonToReact from './components/JsonToReact'
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <JsonToReact
+      recon={recon}
+      nlp={nlp}
+    />
+  )
 }
 
-export default App;
+export default App
