@@ -1,0 +1,1054 @@
+{
+  "tag": "[document]",
+  "type": "parent",
+  "attrs": {},
+  "key": 0,
+  "children": [{
+    "tag": "div",
+    "type": "parent",
+    "attrs": {},
+    "key": 1,
+    "children": [{
+      "tag": "article",
+      "type": "parent",
+      "attrs": {},
+      "key": 2,
+      "children": [{
+        "tag": "section",
+        "type": "parent",
+        "attrs": {
+          "className": "dn do dp dq s dr bj u"
+        },
+        "key": 3,
+        "children": []
+      }, {
+        "tag": "div",
+        "type": "parent",
+        "attrs": {},
+        "key": 4,
+        "children": [{
+          "tag": "section",
+          "type": "parent",
+          "attrs": {
+            "className": "dy dz ea cy eb"
+          },
+          "key": 5,
+          "children": [{
+            "tag": "div",
+            "type": "parent",
+            "attrs": {
+              "className": "n p"
+            },
+            "key": 6,
+            "children": [{
+              "tag": "div",
+              "type": "parent",
+              "attrs": {
+                "className": "ae af ag ah ai ec ak s"
+              },
+              "key": 7,
+              "children": [{
+                "tag": "figure",
+                "type": "parent",
+                "attrs": {
+                  "className": "gx gy dp dq paragraph-image"
+                },
+                "key": 8,
+                "children": [{
+                  "tag": "img",
+                  "type": "parent",
+                  "attrs": {
+                    "alt": "Image for post",
+                    "className": "ds he dt hf s",
+                    "src": "https://miro.medium.com/max/1920/0*NTggrYC-wayWv6-f.jpg",
+                    "width": "960",
+                    "srcset": "https://miro.medium.com/max/552/0*NTggrYC-wayWv6-f.jpg 276w, https://miro.medium.com/max/1104/0*NTggrYC-wayWv6-f.jpg 552w, https://miro.medium.com/max/1280/0*NTggrYC-wayWv6-f.jpg 640w, https://miro.medium.com/max/1400/0*NTggrYC-wayWv6-f.jpg 700w",
+                    "sizes": "700px"
+                  },
+                  "key": 9,
+                  "children": []
+                }, {
+                  "tag": "figcaption",
+                  "type": "parent",
+                  "attrs": {
+                    "className": "hq hr dr dp dq hs ht ap b aq ar fu"
+                  },
+                  "key": 10,
+                  "children": [{
+                    "key": 11,
+                    "type": "child",
+                    "tag": "text",
+                    "val": "Source: ",
+                    "parent": {
+                      "tag": null
+                    }
+                  }, {
+                    "tag": "a",
+                    "type": "parent",
+                    "attrs": {
+                      "href": "https://pixabay.com/photos/purple-sky-dusk-shooting-star-690724/",
+                      "className": "de hu"
+                    },
+                    "key": 12,
+                    "children": [{
+                      "key": 13,
+                      "type": "child",
+                      "tag": "text",
+                      "val": "Pixabay",
+                      "parent": {
+                        "tag": null
+                      }
+                    }]
+                  }]
+                }]
+              }, {
+                "tag": "p",
+                "type": "parent",
+                "attrs": {
+                  "id": "da60",
+                  "className": "hv hw ef hx b fe hy hz ia fh ib ic id ie if ig ih ii ij ik il im in io ip iq dy fc"
+                },
+                "key": 14,
+                "children": [{
+                  "key": 15,
+                  "type": "child",
+                  "tag": "text",
+                  "val": "Over the last few years, the size of deep learning models has increased at an exponential pace (famously among language models):",
+                  "parent": {
+                    "tag": null
+                  }
+                }]
+              }, {
+                "tag": "figure",
+                "type": "parent",
+                "attrs": {
+                  "className": "is it iu iv iw gy dp dq paragraph-image"
+                },
+                "key": 16,
+                "children": [{
+                  "tag": "img",
+                  "type": "parent",
+                  "attrs": {
+                    "alt": "Image for post",
+                    "className": "ds he dt hf s",
+                    "src": "https://miro.medium.com/max/2800/0*5qxZ-ksmewafb5zb.png",
+                    "width": "1400",
+                    "srcset": "https://miro.medium.com/max/552/0*5qxZ-ksmewafb5zb.png 276w, https://miro.medium.com/max/1104/0*5qxZ-ksmewafb5zb.png 552w, https://miro.medium.com/max/1280/0*5qxZ-ksmewafb5zb.png 640w, https://miro.medium.com/max/1400/0*5qxZ-ksmewafb5zb.png 700w",
+                    "sizes": "700px"
+                  },
+                  "key": 17,
+                  "children": []
+                }, {
+                  "tag": "figcaption",
+                  "type": "parent",
+                  "attrs": {
+                    "className": "hq hr dr dp dq hs ht ap b aq ar fu"
+                  },
+                  "key": 18,
+                  "children": [{
+                    "key": 19,
+                    "type": "child",
+                    "tag": "text",
+                    "val": "Source: ",
+                    "parent": {
+                      "tag": null
+                    }
+                  }, {
+                    "tag": "a",
+                    "type": "parent",
+                    "attrs": {
+                      "href": "https://www.microsoft.com/en-us/research/blog/turing-nlg-a-17-billion-parameter-language-model-by-microsoft/",
+                      "className": "de hu"
+                    },
+                    "key": 20,
+                    "children": [{
+                      "key": 21,
+                      "type": "child",
+                      "tag": "text",
+                      "val": "Microsoft",
+                      "parent": {
+                        "tag": null
+                      }
+                    }]
+                  }]
+                }]
+              }, {
+                "tag": "p",
+                "type": "parent",
+                "attrs": {
+                  "id": "39ad",
+                  "className": "hv hw ef hx b fe hy hz ia fh ib ic id ie if ig ih ii ij ik il im in io ip iq dy fc"
+                },
+                "key": 22,
+                "children": [{
+                  "key": 23,
+                  "type": "child",
+                  "tag": "text",
+                  "val": "And in fact, this chart is out of date. As of this month, OpenAI has announced GPT-3, which is a 175 billion parameter model—or roughly ten times the height of this chart.",
+                  "parent": {
+                    "tag": null
+                  }
+                }]
+              }, {
+                "tag": "p",
+                "type": "parent",
+                "attrs": {
+                  "id": "ccee",
+                  "className": "hv hw ef hx b fe hy hz ia fh ib ic id ie if ig ih ii ij ik il im in io ip iq dy fc"
+                },
+                "key": 24,
+                "children": [{
+                  "key": 25,
+                  "type": "child",
+                  "tag": "text",
+                  "val": "As models grow larger, they introduce new infrastructure challenges. For my colleagues and I building ",
+                  "parent": {
+                    "tag": null
+                  }
+                }, {
+                  "tag": "a",
+                  "type": "parent",
+                  "attrs": {
+                    "href": "https://github.com/cortexlabs/cortex",
+                    "className": "de hu"
+                  },
+                  "key": 26,
+                  "children": [{
+                    "key": 27,
+                    "type": "child",
+                    "tag": "text",
+                    "val": "Cortex",
+                    "parent": {
+                      "tag": null
+                    }
+                  }]
+                }, {
+                  "key": 28,
+                  "type": "child",
+                  "tag": "text",
+                  "val": " (open source model serving infrastructure), these challenges are front and center, especially as the number of users deploying large models to production increases.",
+                  "parent": {
+                    "tag": null
+                  }
+                }]
+              }, {
+                "tag": "p",
+                "type": "parent",
+                "attrs": {
+                  "id": "f194",
+                  "className": "hv hw ef hx b fe hy hz ia fh ib ic id ie if ig ih ii ij ik il im in io ip iq dy fc"
+                },
+                "key": 29,
+                "children": [{
+                  "key": 30,
+                  "type": "child",
+                  "tag": "text",
+                  "val": "Below, Ive outline some of the design decisions we made to support serving models like GPT-2 at scale.",
+                  "parent": {
+                    "tag": null
+                  }
+                }]
+              }, {
+                "tag": "h2",
+                "type": "parent",
+                "attrs": {
+                  "id": "b109",
+                  "className": "iy"
+                },
+                "key": 31,
+                "children": [{
+                  "key": 32,
+                  "type": "child",
+                  "tag": "text",
+                  "val": "1. GPUs for inference",
+                  "parent": {
+                    "tag": null
+                  }
+                }]
+              }, {
+                "tag": "p",
+                "type": "parent",
+                "attrs": {
+                  "id": "0e39",
+                  "className": "hv hw ef hx b fe ju hz ia fh jv ic id ie jw ig ih ii jx ik il im jy io ip iq dy fc"
+                },
+                "key": 33,
+                "children": [{
+                  "key": 34,
+                  "type": "child",
+                  "tag": "text",
+                  "val": "Running large deep learning inference on CPUs can be prohibitively slow. GPUs, on the other hand, have significantly more bandwidth (useful for the large computations involved in inference). This makes a large difference in inference latency.",
+                  "parent": {
+                    "tag": null
+                  }
+                }]
+              }, {
+                "tag": "p",
+                "type": "parent",
+                "attrs": {
+                  "id": "4caf",
+                  "className": "hv hw ef hx b fe hy hz ia fh ib ic id ie if ig ih ii ij ik il im in io ip iq dy fc"
+                },
+                "key": 35,
+                "children": [{
+                  "key": 36,
+                  "type": "child",
+                  "tag": "text",
+                  "val": "For example, below I’ve deployed GPT-2 as an API on CPUs. Using the Cortex CLI, I’m monitoring the performance of the API, which I’ve named ",
+                  "parent": {
+                    "tag": null
+                  }
+                }, {
+                  "tag": "code",
+                  "type": "parent",
+                  "attrs": {
+                    "className": "hk jz ka kb kc b"
+                  },
+                  "key": 37,
+                  "children": [{
+                    "key": 38,
+                    "type": "child",
+                    "tag": "text",
+                    "val": "generator",
+                    "parent": {
+                      "tag": null
+                    }
+                  }]
+                }, {
+                  "key": 39,
+                  "type": "child",
+                  "tag": "text",
+                  "val": ":",
+                  "parent": {
+                    "tag": null
+                  }
+                }]
+              }, {
+                "tag": "pre",
+                "type": "parent",
+                "attrs": {
+                  "className": "is it iu iv iw kd ke kf"
+                },
+                "key": 40,
+                "children": []
+              }, {
+                "tag": "p",
+                "type": "parent",
+                "attrs": {
+                  "id": "7d47",
+                  "className": "hv hw ef hx b fe hy hz ia fh ib ic id ie if ig ih ii ij ik il im in io ip iq dy fc"
+                },
+                "key": 41,
+                "children": [{
+                  "key": 42,
+                  "type": "child",
+                  "tag": "text",
+                  "val": "The average inference takes nearly a full second to serve, which has serious implications at scale. For applications that have thousands of concurrent users, it will take a large number of replicas to keep the request queue under control.",
+                  "parent": {
+                    "tag": null
+                  }
+                }]
+              }, {
+                "tag": "p",
+                "type": "parent",
+                "attrs": {
+                  "id": "2497",
+                  "className": "hv hw ef hx b fe hy hz ia fh ib ic id ie if ig ih ii ij ik il im in io ip iq dy fc"
+                },
+                "key": 43,
+                "children": [{
+                  "key": 44,
+                  "type": "child",
+                  "tag": "text",
+                  "val": "Deploying on a GPU, as shown below, improves latency quite a bit:",
+                  "parent": {
+                    "tag": null
+                  }
+                }]
+              }, {
+                "tag": "pre",
+                "type": "parent",
+                "attrs": {
+                  "className": "is it iu iv iw kd ke kf"
+                },
+                "key": 45,
+                "children": []
+              }, {
+                "tag": "p",
+                "type": "parent",
+                "attrs": {
+                  "id": "e2d6",
+                  "className": "hv hw ef hx b fe hy hz ia fh ib ic id ie if ig ih ii ij ik il im in io ip iq dy fc"
+                },
+                "key": 46,
+                "children": [{
+                  "key": 47,
+                  "type": "child",
+                  "tag": "text",
+                  "val": "That’s roughly a 80% decrease from CPUs. For any application running at production scale, this is a meaningful improvement—but even at small scale, it can be crucial for latency-sensitive applications.",
+                  "parent": {
+                    "tag": null
+                  }
+                }]
+              }, {
+                "tag": "p",
+                "type": "parent",
+                "attrs": {
+                  "id": "efc8",
+                  "className": "hv hw ef hx b fe hy hz ia fh ib ic id ie if ig ih ii ij ik il im in io ip iq dy fc"
+                },
+                "key": 48,
+                "children": [{
+                  "key": 49,
+                  "type": "child",
+                  "tag": "text",
+                  "val": "For example, features like Gmail’s Smart Compose require latency as close to realtime as possible. If Smart Compose generates text predictions more slowly than an average person types, recommendations are useless.",
+                  "parent": {
+                    "tag": null
+                  }
+                }]
+              }, {
+                "tag": "p",
+                "type": "parent",
+                "attrs": {
+                  "id": "8f67",
+                  "className": "hv hw ef hx b fe hy hz ia fh ib ic id ie if ig ih ii ij ik il im in io ip iq dy fc"
+                },
+                "key": 50,
+                "children": [{
+                  "key": 51,
+                  "type": "child",
+                  "tag": "text",
+                  "val": "Implementing GPU support required a little refactoring. Cortex uses Kubernetes to manage model serving containers, but Kubernetes does not have out of the box support for managing GPUs across nodes. In order to manage GPUs through Kubernetes, we integrated ",
+                  "parent": {
+                    "tag": null
+                  }
+                }, {
+                  "tag": "a",
+                  "type": "parent",
+                  "attrs": {
+                    "href": "https://github.com/NVIDIA/k8s-device-plugin",
+                    "className": "de hu"
+                  },
+                  "key": 52,
+                  "children": [{
+                    "key": 53,
+                    "type": "child",
+                    "tag": "text",
+                    "val": "NVIDIA’s device plugin for Kubernetes",
+                    "parent": {
+                      "tag": null
+                    }
+                  }]
+                }, {
+                  "key": 54,
+                  "type": "child",
+                  "tag": "text",
+                  "val": ". Despite being in beta, we’ve found it to be very stable.",
+                  "parent": {
+                    "tag": null
+                  }
+                }]
+              }, {
+                "tag": "h2",
+                "type": "parent",
+                "attrs": {
+                  "id": "baab",
+                  "className": "iy"
+                },
+                "key": 55,
+                "children": [{
+                  "key": 56,
+                  "type": "child",
+                  "tag": "text",
+                  "val": "2. Autoscaling based on concurrency",
+                  "parent": {
+                    "tag": null
+                  }
+                }]
+              }, {
+                "tag": "p",
+                "type": "parent",
+                "attrs": {
+                  "id": "1c28",
+                  "className": "hv hw ef hx b fe ju hz ia fh jv ic id ie jw ig ih ii jx ik il im jy io ip iq dy fc"
+                },
+                "key": 57,
+                "children": [{
+                  "key": 58,
+                  "type": "child",
+                  "tag": "text",
+                  "val": "GPU inference solved most of our latency and performance issues, but it introduced new challenges, particularly around autoscaling.",
+                  "parent": {
+                    "tag": null
+                  }
+                }]
+              }, {
+                "tag": "p",
+                "type": "parent",
+                "attrs": {
+                  "id": "0d57",
+                  "className": "hv hw ef hx b fe hy hz ia fh ib ic id ie if ig ih ii ij ik il im in io ip iq dy fc"
+                },
+                "key": 59,
+                "children": [{
+                  "key": 60,
+                  "type": "child",
+                  "tag": "text",
+                  "val": "The ",
+                  "parent": {
+                    "tag": null
+                  }
+                }, {
+                  "tag": "a",
+                  "type": "parent",
+                  "attrs": {
+                    "href": "https://kubernetes.io/docs/tasks/run-application/horizontal-pod-autoscale/",
+                    "className": "de hu"
+                  },
+                  "key": 61,
+                  "children": [{
+                    "key": 62,
+                    "type": "child",
+                    "tag": "text",
+                    "val": "Kubernetes pod autoscaler",
+                    "parent": {
+                      "tag": null
+                    }
+                  }]
+                }, {
+                  "key": 63,
+                  "type": "child",
+                  "tag": "text",
+                  "val": " works by measuring CPU, not GPU, utilization. Obviously, this is useless for GPU inference.",
+                  "parent": {
+                    "tag": null
+                  }
+                }]
+              }, {
+                "tag": "p",
+                "type": "parent",
+                "attrs": {
+                  "id": "8afe",
+                  "className": "hv hw ef hx b fe hy hz ia fh ib ic id ie if ig ih ii ij ik il im in io ip iq dy fc"
+                },
+                "key": 64,
+                "children": [{
+                  "key": 65,
+                  "type": "child",
+                  "tag": "text",
+                  "val": "We brainstormed a number of other approaches to autoscaling GPU instances. First, we tried autoscaling based on target latency. In this approach, users set an ideal latency for their API, and Cortex spun up additional instances until that latency was achieved. There were two key issues here:",
+                  "parent": {
+                    "tag": null
+                  }
+                }]
+              }, {
+                "tag": "ul",
+                "type": "parent",
+                "attrs": {
+                  "className": ""
+                },
+                "key": 66,
+                "children": [{
+                  "tag": "li",
+                  "type": "parent",
+                  "attrs": {
+                    "id": "5841",
+                    "className": "hv hw ef hx b fe hy hz ia fh ib ic id ie if ig ih ii ij ik il im in io ip iq kp kq kr fc"
+                  },
+                  "key": 67,
+                  "children": [{
+                    "key": 68,
+                    "type": "child",
+                    "tag": "text",
+                    "val": "If a user set their target latency unrealistically low—as in their model couldn’t possibly hit it with the provisioned resources—the cluster would autoscale infinitely.",
+                    "parent": {
+                      "tag": null
+                    }
+                  }]
+                }, {
+                  "tag": "li",
+                  "type": "parent",
+                  "attrs": {
+                    "id": "293e",
+                    "className": "hv hw ef hx b fe ks hz ia fh kt ic id ie ku ig ih ii kv ik il im kw io ip iq kp kq kr fc"
+                  },
+                  "key": 69,
+                  "children": [{
+                    "key": 70,
+                    "type": "child",
+                    "tag": "text",
+                    "val": "Latency is a poor signal for scaling ",
+                    "parent": {
+                      "tag": null
+                    }
+                  }, {
+                    "tag": "em",
+                    "type": "parent",
+                    "attrs": {
+                      "className": "kx"
+                    },
+                    "key": 71,
+                    "children": [{
+                      "key": 72,
+                      "type": "child",
+                      "tag": "text",
+                      "val": "down",
+                      "parent": {
+                        "tag": null
+                      }
+                    }]
+                  }, {
+                    "key": 73,
+                    "type": "child",
+                    "tag": "text",
+                    "val": " instances. The latency of a request only changes when a replica is oversubscribed. Whether a replica is barely being used, or is at 90% utilization, latency will be the same so long as there are no queued requests",
+                    "parent": {
+                      "tag": null
+                    }
+                  }]
+                }]
+              }, {
+                "tag": "p",
+                "type": "parent",
+                "attrs": {
+                  "id": "7640",
+                  "className": "hv hw ef hx b fe hy hz ia fh ib ic id ie if ig ih ii ij ik il im in io ip iq dy fc"
+                },
+                "key": 74,
+                "children": [{
+                  "key": 75,
+                  "type": "child",
+                  "tag": "text",
+                  "val": "Additionally, maintaining and debugging this signal would be difficult for users. Any update to the model that affected latency, or any changes to the prediction API that changed latency (calls to another API, file operations, etc.) would require them to tweak their target latency. This was suboptimal.",
+                  "parent": {
+                    "tag": null
+                  }
+                }]
+              }, {
+                "tag": "p",
+                "type": "parent",
+                "attrs": {
+                  "id": "599f",
+                  "className": "hv hw ef hx b fe hy hz ia fh ib ic id ie if ig ih ii ij ik il im in io ip iq dy fc"
+                },
+                "key": 76,
+                "children": [{
+                  "key": 77,
+                  "type": "child",
+                  "tag": "text",
+                  "val": "The second idea we had was to monitor GPU utilization, but currently, ",
+                  "parent": {
+                    "tag": null
+                  }
+                }, {
+                  "tag": "a",
+                  "type": "parent",
+                  "attrs": {
+                    "href": "https://github.com/kubernetes-sigs/metrics-server",
+                    "className": "de hu"
+                  },
+                  "key": 78,
+                  "children": [{
+                    "key": 79,
+                    "type": "child",
+                    "tag": "text",
+                    "val": "Kubernetes metrics server",
+                    "parent": {
+                      "tag": null
+                    }
+                  }]
+                }, {
+                  "key": 80,
+                  "type": "child",
+                  "tag": "text",
+                  "val": " does not offer GPU monitoring. We considered building this ourselves, but ultimately passed for a third option.",
+                  "parent": {
+                    "tag": null
+                  }
+                }]
+              }, {
+                "tag": "p",
+                "type": "parent",
+                "attrs": {
+                  "id": "10c2",
+                  "className": "hv hw ef hx b fe hy hz ia fh ib ic id ie if ig ih ii ij ik il im in io ip iq dy fc"
+                },
+                "key": 81,
+                "children": [{
+                  "key": 82,
+                  "type": "child",
+                  "tag": "text",
+                  "val": "Our third option, and the one which turned out to be the best, was to implement ",
+                  "parent": {
+                    "tag": null
+                  }
+                }, {
+                  "tag": "strong",
+                  "type": "parent",
+                  "attrs": {
+                    "className": "hx eg"
+                  },
+                  "key": 83,
+                  "children": [{
+                    "key": 84,
+                    "type": "child",
+                    "tag": "text",
+                    "val": "request-based autoscaling",
+                    "parent": {
+                      "tag": null
+                    }
+                  }]
+                }, {
+                  "key": 85,
+                  "type": "child",
+                  "tag": "text",
+                  "val": ", in which the number of enqueued requests and the concurrency capacity of a replica are used to calculate the number of needed replicas.",
+                  "parent": {
+                    "tag": null
+                  }
+                }]
+              }, {
+                "tag": "p",
+                "type": "parent",
+                "attrs": {
+                  "id": "df8c",
+                  "className": "hv hw ef hx b fe hy hz ia fh ib ic id ie if ig ih ii ij ik il im in io ip iq dy fc"
+                },
+                "key": 86,
+                "children": [{
+                  "key": 87,
+                  "type": "child",
+                  "tag": "text",
+                  "val": "This approach worked, but required some refactoring:",
+                  "parent": {
+                    "tag": null
+                  }
+                }]
+              }, {
+                "tag": "ul",
+                "type": "parent",
+                "attrs": {
+                  "className": ""
+                },
+                "key": 88,
+                "children": [{
+                  "tag": "li",
+                  "type": "parent",
+                  "attrs": {
+                    "id": "4d52",
+                    "className": "hv hw ef hx b fe hy hz ia fh ib ic id ie if ig ih ii ij ik il im in io ip iq kp kq kr fc"
+                  },
+                  "key": 89,
+                  "children": [{
+                    "key": 90,
+                    "type": "child",
+                    "tag": "text",
+                    "val": "We needed to redesign Cortex to use FastAPI and Uvicorn, as they allow us to run an asynchronous event loop that tracks requests as they’re added to the queue.",
+                    "parent": {
+                      "tag": null
+                    }
+                  }]
+                }, {
+                  "tag": "li",
+                  "type": "parent",
+                  "attrs": {
+                    "id": "8afb",
+                    "className": "hv hw ef hx b fe ks hz ia fh kt ic id ie ku ig ih ii kv ik il im kw io ip iq kp kq kr fc"
+                  },
+                  "key": 91,
+                  "children": [{
+                    "key": 92,
+                    "type": "child",
+                    "tag": "text",
+                    "val": "We added a ",
+                    "parent": {
+                      "tag": null
+                    }
+                  }, {
+                    "tag": "code",
+                    "type": "parent",
+                    "attrs": {
+                      "className": "hk jz ka kb kc b"
+                    },
+                    "key": 93,
+                    "children": [{
+                      "key": 94,
+                      "type": "child",
+                      "tag": "text",
+                      "val": "target_replica_concurrency",
+                      "parent": {
+                        "tag": null
+                      }
+                    }]
+                  }, {
+                    "key": 95,
+                    "type": "child",
+                    "tag": "text",
+                    "val": " field to Cortex’s configuration files, so that users can specify how many requests a replica should handle concurrently at a steady rate.",
+                    "parent": {
+                      "tag": null
+                    }
+                  }]
+                }]
+              }, {
+                "tag": "p",
+                "type": "parent",
+                "attrs": {
+                  "id": "ede6",
+                  "className": "hv hw ef hx b fe hy hz ia fh ib ic id ie if ig ih ii ij ik il im in io ip iq dy fc"
+                },
+                "key": 96,
+                "children": [{
+                  "key": 97,
+                  "type": "child",
+                  "tag": "text",
+                  "val": "There’s a ",
+                  "parent": {
+                    "tag": null
+                  }
+                }, {
+                  "tag": "a",
+                  "type": "parent",
+                  "attrs": {
+                    "className": "de hu",
+                    "href": "https://towardsdatascience.com/implementing-request-based-autoscaling-for-machine-learning-workloads-feb41572956"
+                  },
+                  "key": 98,
+                  "children": [{
+                    "key": 99,
+                    "type": "child",
+                    "tag": "text",
+                    "val": "full write up of the project here",
+                    "parent": {
+                      "tag": null
+                    }
+                  }]
+                }, {
+                  "key": 100,
+                  "type": "child",
+                  "tag": "text",
+                  "val": ", but the end result is that now, Cortex can quickly autoscale to the optimal number of replicas (i.e. the minimum required without affecting performance).",
+                  "parent": {
+                    "tag": null
+                  }
+                }]
+              }, {
+                "tag": "h2",
+                "type": "parent",
+                "attrs": {
+                  "id": "2420",
+                  "className": "iy"
+                },
+                "key": 101,
+                "children": [{
+                  "key": 102,
+                  "type": "child",
+                  "tag": "text",
+                  "val": "3. Managing costs with spot instances",
+                  "parent": {
+                    "tag": null
+                  }
+                }]
+              }, {
+                "tag": "p",
+                "type": "parent",
+                "attrs": {
+                  "id": "e580",
+                  "className": "hv hw ef hx b fe ju hz ia fh jv ic id ie jw ig ih ii jx ik il im jy io ip iq dy fc"
+                },
+                "key": 103,
+                "children": [{
+                  "key": 104,
+                  "type": "child",
+                  "tag": "text",
+                  "val": "One of our ongoing focuses is lowering the cost of inference at scale. AWS’s cheapest GPU instance is the ",
+                  "parent": {
+                    "tag": null
+                  }
+                }, {
+                  "tag": "code",
+                  "type": "parent",
+                  "attrs": {
+                    "className": "hk jz ka kb kc b"
+                  },
+                  "key": 105,
+                  "children": [{
+                    "key": 106,
+                    "type": "child",
+                    "tag": "text",
+                    "val": "g4dn.xlarge",
+                    "parent": {
+                      "tag": null
+                    }
+                  }]
+                }, {
+                  "key": 107,
+                  "type": "child",
+                  "tag": "text",
+                  "val": ", which costs $0.526 per hour and has a single GPU. Running a 500 GPU cluster, which some users do, for a month costs about $190,000.",
+                  "parent": {
+                    "tag": null
+                  }
+                }]
+              }, {
+                "tag": "p",
+                "type": "parent",
+                "attrs": {
+                  "id": "8daa",
+                  "className": "hv hw ef hx b fe hy hz ia fh ib ic id ie if ig ih ii ij ik il im in io ip iq dy fc"
+                },
+                "key": 108,
+                "children": [{
+                  "key": 109,
+                  "type": "child",
+                  "tag": "text",
+                  "val": "Our initial instinct here was to support spot instances for inference. If you’re unfamiliar, spot instances are unused instances that AWS sells at a steep—sometimes as much as 70%—discount.",
+                  "parent": {
+                    "tag": null
+                  }
+                }]
+              }, {
+                "tag": "p",
+                "type": "parent",
+                "attrs": {
+                  "id": "5336",
+                  "className": "hv hw ef hx b fe hy hz ia fh ib ic id ie if ig ih ii ij ik il im in io ip iq dy fc"
+                },
+                "key": 110,
+                "children": [{
+                  "key": 111,
+                  "type": "child",
+                  "tag": "text",
+                  "val": "The challenge in implementation, however, was around how spot instances are allocated within AWS autoscaling groups.",
+                  "parent": {
+                    "tag": null
+                  }
+                }]
+              }, {
+                "tag": "p",
+                "type": "parent",
+                "attrs": {
+                  "id": "303f",
+                  "className": "hv hw ef hx b fe hy hz ia fh ib ic id ie if ig ih ii ij ik il im in io ip iq dy fc"
+                },
+                "key": 112,
+                "children": [{
+                  "key": 113,
+                  "type": "child",
+                  "tag": "text",
+                  "val": "Our goal was to allow users to opt to receive spot instances by default if available, and otherwise receive on demand instances. But autoscaling groups don’t work that way. Instead, users specify what percentage of nodes in an autoscaling group they want to be spot, and EKS tries to accommodate. There is no way to configure the autoscaling group to fall back to on demand instances when spot instances are not available.",
+                  "parent": {
+                    "tag": null
+                  }
+                }]
+              }, {
+                "tag": "p",
+                "type": "parent",
+                "attrs": {
+                  "id": "e100",
+                  "className": "hv hw ef hx b fe hy hz ia fh ib ic id ie if ig ih ii ij ik il im in io ip iq dy fc"
+                },
+                "key": 114,
+                "children": [{
+                  "key": 115,
+                  "type": "child",
+                  "tag": "text",
+                  "val": "To work around this, Cortex actually defines two separate autoscaling groups: one for spot instances, and another which is 100% on demand (and is only used as a backup for the primary autoscaling group). If a user requests spot instances, Cortex will first request nodes from the spot instance group. If an instance cannot be allocated (the scale-up request times out after five minutes), Cortex will request an instance from the on-demand instance group, and will temporarily blacklist the spot instance group so that future requests avoid the timeout.",
+                  "parent": {
+                    "tag": null
+                  }
+                }]
+              }, {
+                "tag": "h2",
+                "type": "parent",
+                "attrs": {
+                  "id": "2ca1",
+                  "className": "iy"
+                },
+                "key": 116,
+                "children": [{
+                  "key": 117,
+                  "type": "child",
+                  "tag": "text",
+                  "val": "Adapting to changes in model development",
+                  "parent": {
+                    "tag": null
+                  }
+                }]
+              }, {
+                "tag": "p",
+                "type": "parent",
+                "attrs": {
+                  "id": "738a",
+                  "className": "hv hw ef hx b fe ju hz ia fh jv ic id ie jw ig ih ii jx ik il im jy io ip iq dy fc"
+                },
+                "key": 118,
+                "children": [{
+                  "key": 119,
+                  "type": "child",
+                  "tag": "text",
+                  "val": "As model sizes continue to increase exponentially, there are other related changes within machine learning that affect how we design infrastructure.",
+                  "parent": {
+                    "tag": null
+                  }
+                }]
+              }, {
+                "tag": "p",
+                "type": "parent",
+                "attrs": {
+                  "id": "b1d6",
+                  "className": "hv hw ef hx b fe hy hz ia fh ib ic id ie if ig ih ii ij ik il im in io ip iq dy fc"
+                },
+                "key": 120,
+                "children": [{
+                  "key": 121,
+                  "type": "child",
+                  "tag": "text",
+                  "val": "First, pretrained models are becoming more prevalent in production. There are many teams doing no model training at all, and simply deploying pretrained models. Having a serving platform that can stand on its own, as opposed to only integrating with their training pipeline, is important for them—as they don’t have a pipeline.",
+                  "parent": {
+                    "tag": null
+                  }
+                }]
+              }, {
+                "tag": "p",
+                "type": "parent",
+                "attrs": {
+                  "id": "9fd2",
+                  "className": "hv hw ef hx b fe hy hz ia fh ib ic id ie if ig ih ii ij ik il im in io ip iq dy fc"
+                },
+                "key": 122,
+                "children": [{
+                  "key": 123,
+                  "type": "child",
+                  "tag": "text",
+                  "val": "Secondly, ASICs are becoming more important, as they present a good option for handling the resource needs of large models. Google has rolled out cloud TPUs, which allow for faster training and inference, while Amazon recently released Inferentia, a chip built specifically for inference.",
+                  "parent": {
+                    "tag": null
+                  }
+                }]
+              }, {
+                "tag": "p",
+                "type": "parent",
+                "attrs": {
+                  "id": "af8d",
+                  "className": "hv hw ef hx b fe hy hz ia fh ib ic id ie if ig ih ii ij ik il im in io ip iq dy fc"
+                },
+                "key": 124,
+                "children": [{
+                  "key": 125,
+                  "type": "child",
+                  "tag": "text",
+                  "val": "All of these changes are good things—state-of-the-art models are being released pretrained, more teams are putting models into production, and the hardware for running inference is improving—but in order to take advantage of them, our model serving infrastructure needs to be constantly improved and rearchitected.",
+                  "parent": {
+                    "tag": null
+                  }
+                }]
+              }]
+            }]
+          }]
+        }]
+      }]
+    }]
+  }]
+}
