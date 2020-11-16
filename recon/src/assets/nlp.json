@@ -13014,5 +13014,682 @@
       },
       "vector": null
     }
+  ],
+  "multiEnts": [
+    {
+      "entity": "the last few years",
+      "entityId": 4,
+      "sentIdxs": [
+        1
+      ],
+      "occurrences": 1,
+      "hierEnt": "Dates",
+      "label": "DATE",
+      "spans": [
+        {
+          "start": 4,
+          "end": 8
+        }
+      ],
+      "coordinates": [
+        -2.212890625,
+        -1.28125
+      ]
+    },
+    {
+      "entity": "Microsoft",
+      "entityId": 30,
+      "sentIdxs": [
+        2
+      ],
+      "occurrences": 1,
+      "hierEnt": "Organisation",
+      "label": "ORG",
+      "spans": [
+        {
+          "start": 30,
+          "end": 31
+        }
+      ],
+      "coordinates": [
+        -1.1953125,
+        1.431640625
+      ]
+    },
+    {
+      "entity": "this month",
+      "entityId": 44,
+      "sentIdxs": [
+        4
+      ],
+      "occurrences": 1,
+      "hierEnt": "Dates",
+      "label": "DATE",
+      "spans": [
+        {
+          "start": 44,
+          "end": 46
+        }
+      ],
+      "coordinates": [
+        -0.09954833984375,
+        1.9150390625
+      ]
+    },
+    {
+      "entity": "OpenAI",
+      "entityId": 47,
+      "sentIdxs": [
+        4
+      ],
+      "occurrences": 1,
+      "hierEnt": "Organisation",
+      "label": "ORG",
+      "spans": [
+        {
+          "start": 47,
+          "end": 48
+        }
+      ],
+      "coordinates": [
+        0.1458740234375,
+        3.59375
+      ]
+    },
+    {
+      "entity": "GPT-3",
+      "entityId": 50,
+      "sentIdxs": [
+        4
+      ],
+      "occurrences": 1,
+      "hierEnt": "Other",
+      "label": "PRODUCT",
+      "spans": [
+        {
+          "start": 50,
+          "end": 51
+        }
+      ],
+      "coordinates": [
+        1.828125,
+        3.390625
+      ]
+    },
+    {
+      "entity": "Cortex",
+      "entityId": 87,
+      "sentIdxs": [
+        6,
+        24,
+        34,
+        47,
+        49,
+        50,
+        63,
+        64,
+        65
+      ],
+      "occurrences": 9,
+      "hierEnt": "Organisation",
+      "label": "ORG",
+      "spans": [
+        {
+          "start": 87,
+          "end": 88
+        },
+        {
+          "start": 362,
+          "end": 363
+        },
+        {
+          "start": 505,
+          "end": 506
+        },
+        {
+          "start": 760,
+          "end": 761
+        },
+        {
+          "start": 795,
+          "end": 796
+        },
+        {
+          "start": 837,
+          "end": 838
+        },
+        {
+          "start": 1057,
+          "end": 1058
+        },
+        {
+          "start": 1100,
+          "end": 1101
+        },
+        {
+          "start": 1131,
+          "end": 1132
+        }
+      ],
+      "coordinates": [
+        1.0126953125,
+        1.201171875
+      ]
+    },
+    {
+      "entity": "GPT-2",
+      "entityId": 134,
+      "sentIdxs": [
+        7
+      ],
+      "occurrences": 1,
+      "hierEnt": "Other",
+      "label": "PRODUCT",
+      "spans": [
+        {
+          "start": 134,
+          "end": 135
+        }
+      ],
+      "coordinates": [
+        2.3828125,
+        -1.4931640625
+      ]
+    },
+    {
+      "entity": "second",
+      "entityId": 227,
+      "sentIdxs": [
+        15,
+        43
+      ],
+      "occurrences": 2,
+      "hierEnt": "Numbers",
+      "label": "ORDINAL",
+      "spans": [
+        {
+          "start": 227,
+          "end": 228
+        },
+        {
+          "start": 663,
+          "end": 664
+        }
+      ],
+      "coordinates": [
+        -1.0517578125,
+        -2.3125
+      ]
+    },
+    {
+      "entity": "80%",
+      "entityId": 282,
+      "sentIdxs": [
+        18
+      ],
+      "occurrences": 1,
+      "hierEnt": "Numbers",
+      "label": "PERCENT",
+      "spans": [
+        {
+          "start": 282,
+          "end": 284
+        }
+      ],
+      "coordinates": [
+        -1.7607421875,
+        -1.5478515625
+      ]
+    },
+    {
+      "entity": "Gmail",
+      "entityId": 323,
+      "sentIdxs": [
+        20
+      ],
+      "occurrences": 1,
+      "hierEnt": "People",
+      "label": "PERSON",
+      "spans": [
+        {
+          "start": 323,
+          "end": 324
+        }
+      ],
+      "coordinates": [
+        1.52734375,
+        2.34765625
+      ]
+    },
+    {
+      "entity": "Kubernetes",
+      "entityId": 364,
+      "sentIdxs": [
+        24,
+        24,
+        25,
+        25,
+        30,
+        43
+      ],
+      "occurrences": 6,
+      "hierEnt": "People",
+      "label": "GPE",
+      "spans": [
+        {
+          "start": 364,
+          "end": 365
+        },
+        {
+          "start": 372,
+          "end": 373
+        },
+        {
+          "start": 393,
+          "end": 394
+        },
+        {
+          "start": 402,
+          "end": 403
+        },
+        {
+          "start": 446,
+          "end": 447
+        },
+        {
+          "start": 676,
+          "end": 677
+        }
+      ],
+      "coordinates": [
+        -0.1226806640625,
+        -2.904296875
+      ]
+    },
+    {
+      "entity": "NVIDIA",
+      "entityId": 397,
+      "sentIdxs": [
+        25
+      ],
+      "occurrences": 1,
+      "hierEnt": "Organisation",
+      "label": "ORG",
+      "spans": [
+        {
+          "start": 397,
+          "end": 398
+        }
+      ],
+      "coordinates": [
+        0.481201171875,
+        0.374755859375
+      ]
+    },
+    {
+      "entity": "First",
+      "entityId": 481,
+      "sentIdxs": [
+        33,
+        68
+      ],
+      "occurrences": 2,
+      "hierEnt": "Numbers",
+      "label": "ORDINAL",
+      "spans": [
+        {
+          "start": 481,
+          "end": 482
+        },
+        {
+          "start": 1189,
+          "end": 1190
+        }
+      ],
+      "coordinates": [
+        -0.11688232421875,
+        1.078125
+      ]
+    },
+    {
+      "entity": "90%",
+      "entityId": 588,
+      "sentIdxs": [
+        39
+      ],
+      "occurrences": 1,
+      "hierEnt": "Numbers",
+      "label": "PERCENT",
+      "spans": [
+        {
+          "start": 588,
+          "end": 590
+        }
+      ],
+      "coordinates": [
+        -0.405029296875,
+        -0.29736328125
+      ]
+    },
+    {
+      "entity": "GPU",
+      "entityId": 670,
+      "sentIdxs": [
+        43,
+        54
+      ],
+      "occurrences": 2,
+      "hierEnt": "People",
+      "label": "PERSON",
+      "spans": [
+        {
+          "start": 670,
+          "end": 671
+        },
+        {
+          "start": 881,
+          "end": 882
+        }
+      ],
+      "coordinates": [
+        -0.7705078125,
+        -0.0440673828125
+      ]
+    },
+    {
+      "entity": "third",
+      "entityId": 697,
+      "sentIdxs": [
+        44,
+        45
+      ],
+      "occurrences": 2,
+      "hierEnt": "Numbers",
+      "label": "ORDINAL",
+      "spans": [
+        {
+          "start": 697,
+          "end": 698
+        },
+        {
+          "start": 701,
+          "end": 702
+        }
+      ],
+      "coordinates": [
+        -0.0941162109375,
+        -1.0869140625
+      ]
+    },
+    {
+      "entity": "AWS",
+      "entityId": 878,
+      "sentIdxs": [
+        54,
+        57,
+        58
+      ],
+      "occurrences": 3,
+      "hierEnt": "Organisation",
+      "label": "ORG",
+      "spans": [
+        {
+          "start": 878,
+          "end": 879
+        },
+        {
+          "start": 941,
+          "end": 942
+        },
+        {
+          "start": 968,
+          "end": 969
+        }
+      ],
+      "coordinates": [
+        2.0859375,
+        0.5458984375
+      ]
+    },
+    {
+      "entity": "g4dn.xlarge",
+      "entityId": 885,
+      "sentIdxs": [
+        54
+      ],
+      "occurrences": 1,
+      "hierEnt": "People",
+      "label": "PERSON",
+      "spans": [
+        {
+          "start": 885,
+          "end": 886
+        }
+      ],
+      "coordinates": [
+        1.064453125,
+        -1.6708984375
+      ]
+    },
+    {
+      "entity": "$0.526",
+      "entityId": 889,
+      "sentIdxs": [
+        54
+      ],
+      "occurrences": 1,
+      "hierEnt": "Money",
+      "label": "MONEY",
+      "spans": [
+        {
+          "start": 889,
+          "end": 891
+        }
+      ],
+      "coordinates": [
+        -0.286376953125,
+        -0.1807861328125
+      ]
+    },
+    {
+      "entity": "a month",
+      "entityId": 911,
+      "sentIdxs": [
+        55
+      ],
+      "occurrences": 1,
+      "hierEnt": "Dates",
+      "label": "DATE",
+      "spans": [
+        {
+          "start": 911,
+          "end": 913
+        }
+      ],
+      "coordinates": [
+        -2.39453125,
+        -1.87890625
+      ]
+    },
+    {
+      "entity": "about $190,000",
+      "entityId": 914,
+      "sentIdxs": [
+        55
+      ],
+      "occurrences": 1,
+      "hierEnt": "Money",
+      "label": "MONEY",
+      "spans": [
+        {
+          "start": 914,
+          "end": 917
+        }
+      ],
+      "coordinates": [
+        0.28369140625,
+        1.4267578125
+      ]
+    },
+    {
+      "entity": "as much as 70%\u2014discount",
+      "entityId": 948,
+      "sentIdxs": [
+        57
+      ],
+      "occurrences": 1,
+      "hierEnt": "Numbers",
+      "label": "PERCENT",
+      "spans": [
+        {
+          "start": 948,
+          "end": 952
+        }
+      ],
+      "coordinates": [
+        0.01406097412109375,
+        -2.123046875
+      ]
+    },
+    {
+      "entity": "100%",
+      "entityId": 1074,
+      "sentIdxs": [
+        63
+      ],
+      "occurrences": 1,
+      "hierEnt": "Numbers",
+      "label": "PERCENT",
+      "spans": [
+        {
+          "start": 1074,
+          "end": 1076
+        }
+      ],
+      "coordinates": [
+        0.472900390625,
+        0.8466796875
+      ]
+    },
+    {
+      "entity": "first",
+      "entityId": 1102,
+      "sentIdxs": [
+        64
+      ],
+      "occurrences": 1,
+      "hierEnt": "Numbers",
+      "label": "ORDINAL",
+      "spans": [
+        {
+          "start": 1102,
+          "end": 1103
+        }
+      ],
+      "coordinates": [
+        -1.4931640625,
+        -0.42138671875
+      ]
+    },
+    {
+      "entity": "five minutes",
+      "entityId": 1127,
+      "sentIdxs": [
+        65
+      ],
+      "occurrences": 1,
+      "hierEnt": "Dates",
+      "label": "TIME",
+      "spans": [
+        {
+          "start": 1127,
+          "end": 1129
+        }
+      ],
+      "coordinates": [
+        -2.341796875,
+        1.1396484375
+      ]
+    },
+    {
+      "entity": "Secondly",
+      "entityId": 1251,
+      "sentIdxs": [
+        71
+      ],
+      "occurrences": 1,
+      "hierEnt": "Numbers",
+      "label": "ORDINAL",
+      "spans": [
+        {
+          "start": 1251,
+          "end": 1252
+        }
+      ],
+      "coordinates": [
+        0.31396484375,
+        1.6689453125
+      ]
+    },
+    {
+      "entity": "Google",
+      "entityId": 1274,
+      "sentIdxs": [
+        72
+      ],
+      "occurrences": 1,
+      "hierEnt": "Organisation",
+      "label": "ORG",
+      "spans": [
+        {
+          "start": 1274,
+          "end": 1275
+        }
+      ],
+      "coordinates": [
+        -0.49853515625,
+        1.2587890625
+      ]
+    },
+    {
+      "entity": "Amazon",
+      "entityId": 1290,
+      "sentIdxs": [
+        72
+      ],
+      "occurrences": 1,
+      "hierEnt": "Organisation",
+      "label": "ORG",
+      "spans": [
+        {
+          "start": 1290,
+          "end": 1291
+        }
+      ],
+      "coordinates": [
+        0.93701171875,
+        1.9638671875
+      ]
+    },
+    {
+      "entity": "Inferentia",
+      "entityId": 1293,
+      "sentIdxs": [
+        72
+      ],
+      "occurrences": 1,
+      "hierEnt": "Organisation",
+      "label": "ORG",
+      "spans": [
+        {
+          "start": 1293,
+          "end": 1294
+        }
+      ],
+      "coordinates": [
+        1.2587890625,
+        2.234375
+      ]
+    }
   ]
 }
