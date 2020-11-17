@@ -31,7 +31,6 @@ function JsonToReact({ recon, nlp }) {
       <input type="text" value={sentence} onChange={e => setSentence(e.target.value)} />
       <button onClick={findSentence}>Find Sentence</button>
       <div dangerouslySetInnerHTML={{__html: getHTML(recon, nlp)}} />
-      <div>{getHTML(recon, nlp)}</div>
     </>
   )
 }
