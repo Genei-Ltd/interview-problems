@@ -8,12 +8,17 @@ function JsonToReact({ recon, nlp }) {
 }
 
 function getHTML(el, nlp) {
-  const {reconKeyToSlice} = nlp;
+  const {tokens, reconKeyToSlice} = nlp;
   const {key, tag, val = '', attrs: {src} = {}, children = []} = el;
+  var text = [];
   if (val) {
     const {span: {start, end}} = reconKeyToSlice.find(({uuid}) => uuid === key);
+    text = tokens.slice(start, end); 
   }
-  let html = `<${tag}${src ? ' src=' + src : ''}>${val}`;
+  let html = `<${tag}${src ? ' src=' + src : ''}>`;
+  text.map(({textWithWs}) => {
+    html += `<span>${textWithWs}</span>`
+  })
   children.map((child, i) => {
     html += getHTML(child, nlp)
   });
