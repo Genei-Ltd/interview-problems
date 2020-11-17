@@ -1,19 +1,17 @@
 function JsonToReact({ recon, nlp }) {
   return (
-    <Tag el={recon} />
+    <div dangerouslySetInnerHTML={{__html: getHTML(recon)}} />
   )
 }
 
-function Tag({el}) {
+function getHTML(el) {
   const {tag, children} = el;
-  return (
-    <>
-      <div>{tag}</div>
-      {children && children.map((child, i) => (
-        <Tag key={i} el={child} />
-      ))}  
-    </>
-  )
+  let html = `<${tag}>`;
+  {children && children.map((child, i) => (
+    html += getHTML(child)
+  ))}  
+  html += `<${tag}>`;
+  return html;
 }
 
 export default JsonToReact
