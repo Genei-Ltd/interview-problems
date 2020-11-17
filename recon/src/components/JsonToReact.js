@@ -30,8 +30,8 @@ function getHTML(el, nlp) {
     text = tokens.slice(start, end); 
   }
   let html = `<${tag}${src ? ' src=' + src : ''}>`;
-  text.map(({textWithWs}, i) => {
-    html += `<span data-slice=${start + i}>${textWithWs}</span>`
+  text.map(({textWithWs, sentIdx}, i) => {
+    html += `<span data-slice=${start + i} data-sentence=${sentIdx}>${textWithWs}</span>`
   })
   children.map((child, i) => {
     html += getHTML(child, nlp)
