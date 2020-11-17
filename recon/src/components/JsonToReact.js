@@ -12,12 +12,12 @@ function getHTML(el, nlp) {
   const {key, tag, val = '', attrs: {src} = {}, children = []} = el;
   var text = [];
   if (val) {
-    const {span: {start, end}} = reconKeyToSlice.find(({uuid}) => uuid === key);
+    var {span: {start, end}} = reconKeyToSlice.find(({uuid}) => uuid === key);
     text = tokens.slice(start, end); 
   }
   let html = `<${tag}${src ? ' src=' + src : ''}>`;
-  text.map(({textWithWs}) => {
-    html += `<span>${textWithWs}</span>`
+  text.map(({textWithWs}, i) => {
+    html += `<span data-slice=${start + i}>${textWithWs}</span>`
   })
   children.map((child, i) => {
     html += getHTML(child, nlp)
