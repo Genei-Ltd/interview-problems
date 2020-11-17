@@ -17,6 +17,10 @@ function JsonToReact({ recon, nlp }) {
     if (sentence) {
       const sent = document.querySelector(`span[data-sentence='${sentence}']`);
       sent && sent.scrollIntoView();
+      const els = document.querySelectorAll(`span[data-sentence='${sentence}']`);
+      els.forEach(el => {
+        el.style.backgroundColor = 'yellow';
+      })
     }
   };
   return (
