@@ -5,8 +5,8 @@ function JsonToReact({ recon, nlp }) {
 }
 
 function getHTML(el) {
-  const {tag, children = []} = el;
-  let html = `<${tag}>`;
+  const {tag, val = '', children = []} = el;
+  let html = `<${tag}>${val}`;
   children.map((child, i) => {
     html += getHTML(child)
   });
