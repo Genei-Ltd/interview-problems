@@ -1,11 +1,15 @@
-import {useState, useEffect} from 'react';
+import {useState, useEffect, useRef} from 'react';
 
 function JsonToReact({ recon, nlp }) {
   const [tokenSlice, setTokenSlice] = useState('');
+  const foundEl = useRef(null);
   useEffect(() => {
     if (tokenSlice) {
+      if (foundEl.current)
+        foundEl.current.style.backgroundColor = '';
       var el = document.querySelector(`span[data-slice='${tokenSlice}']`);
-      console.log(el);
+      el.style.backgroundColor = 'yellow';
+      foundEl.current = el;
     }
   })
   return (
