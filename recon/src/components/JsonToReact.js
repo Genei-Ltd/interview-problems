@@ -5,11 +5,11 @@ function JsonToReact({ recon, nlp }) {
 }
 
 function getHTML(el) {
-  const {tag, children} = el;
+  const {tag, children = []} = el;
   let html = `<${tag}>`;
-  {children && children.map((child, i) => (
+  children.map((child, i) => {
     html += getHTML(child)
-  ))}  
+  });
   html += `<${tag}>`;
   return html;
 }
