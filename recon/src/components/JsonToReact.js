@@ -1,6 +1,6 @@
 function JsonToReact({ recon, nlp }) {
   return (
-    <div dangerouslySetInnerHTML={{__html: getHTML(recon)}} />
+    <div>{getHTML(recon)}</div>
   )
 }
 
