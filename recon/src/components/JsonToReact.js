@@ -4,6 +4,7 @@ function JsonToReact({ recon, nlp }) {
   const [tokenSlice, setTokenSlice] = useState('');
   const [sentence, setSentence] = useState('');
   const foundEl = useRef(null);
+  const foundSentence = useRef(null);
   useEffect(() => {
     if (tokenSlice) {
       if (foundEl.current)
@@ -15,12 +16,13 @@ function JsonToReact({ recon, nlp }) {
   });
   const findSentence = () => {
     if (sentence) {
+      if (foundSentence.current)
+        foundSentence.current.forEach(el => el.style.backgroundColor = '');
       const sent = document.querySelector(`span[data-sentence='${sentence}']`);
       sent && sent.scrollIntoView();
       const els = document.querySelectorAll(`span[data-sentence='${sentence}']`);
-      els.forEach(el => {
-        el.style.backgroundColor = 'yellow';
-      })
+      els.forEach(el => el.style.backgroundColor = 'yellow');
+      foundSentence.current = els;
     }
   };
   return (
