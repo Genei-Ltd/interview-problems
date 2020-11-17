@@ -1,7 +1,12 @@
 function JsonToReact({ recon, nlp }) {
   return (
-    <div>Start here</div>
+    <Tag el={recon} />
   )
+}
+
+function Tag({el}) {
+  const {tag, children} = el;
+  return <div>{tag}</div>
 }
 
 export default JsonToReact
