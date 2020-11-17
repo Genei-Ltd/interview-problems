@@ -6,7 +6,14 @@ function JsonToReact({ recon, nlp }) {
 
 function Tag({el}) {
   const {tag, children} = el;
-  return <div>{tag}</div>
+  return (
+    <>
+      <div>{tag}</div>
+      {children && children.map((child, i) => (
+        <Tag key={i} el={child} />
+      ))}  
+    </>
+  )
 }
 
 export default JsonToReact
