@@ -2,6 +2,7 @@ import {useState, useEffect, useRef} from 'react';
 
 function JsonToReact({ recon, nlp }) {
   const [tokenSlice, setTokenSlice] = useState('');
+  const [sentence, setSentence] = useState('');
   const foundEl = useRef(null);
   useEffect(() => {
     if (tokenSlice) {
@@ -11,10 +12,18 @@ function JsonToReact({ recon, nlp }) {
       el.style.backgroundColor = 'yellow';
       foundEl.current = el;
     }
-  })
+  });
+  const findSentence = () => {
+    if (sentence) {
+      const sent = document.querySelector(`span[data-sentence='${sentence}']`);
+      sent && sent.scrollIntoView();
+    }
+  };
   return (
     <>
       <input type="text" value={tokenSlice} onChange={e => setTokenSlice(e.target.value)} />
+      <input type="text" value={sentence} onChange={e => setSentence(e.target.value)} />
+      <button onClick={findSentence}>Find Sentence</button>
       <div dangerouslySetInnerHTML={{__html: getHTML(recon, nlp)}} />
       <div>{getHTML(recon, nlp)}</div>
     </>
