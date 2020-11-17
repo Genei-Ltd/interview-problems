@@ -1,6 +1,16 @@
+import {useState, useEffect} from 'react';
+
 function JsonToReact({ recon, nlp }) {
+  const [tokenSlice, setTokenSlice] = useState('');
+  useEffect(() => {
+    if (tokenSlice) {
+      var el = document.querySelector(`span[data-slice='${tokenSlice}']`);
+      console.log(el);
+    }
+  })
   return (
     <>
+      <input type="text" value={tokenSlice} onChange={e => setTokenSlice(e.target.value)} />
       <div dangerouslySetInnerHTML={{__html: getHTML(recon, nlp)}} />
       <div>{getHTML(recon, nlp)}</div>
     </>
